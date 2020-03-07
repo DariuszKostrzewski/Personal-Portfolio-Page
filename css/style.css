@@ -94,6 +94,8 @@ hr {
     column-gap: 2em;
     row-gap: 2em;
     width: 100%;
+    height: auto;
+    padding: 1em 0;
     border: 2px solid yellow;
 }
 
@@ -102,15 +104,19 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 280px;
+    height: 300px;
     width: 100%;
-    margin: auto;
-    border: 1px dashed #654565;
+    margin: 0;
 }
 
 .project-img {
-    height: 280px;
+    height: 300px;
     width: 100%;
+}
+
+.link {
+    text-decoration: none;
+    color: #80929B;
 }
 
 #click-more {
