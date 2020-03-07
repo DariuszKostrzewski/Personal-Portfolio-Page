@@ -123,3 +123,9 @@ hr {
     order: 3;
     height: 100px;
 }
+
+#contact {
+    display: flex;
+    height: calc(100vh - 80px);
+    background-color: hsla(200, 26%, 11%, 1);
+}
