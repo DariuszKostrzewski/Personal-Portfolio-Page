@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Project - Personal Portfolio Webpage</title>
 </head>
@@ -13,9 +14,9 @@
 
         <nav id="navbar">
             <ul id="menu">
-                <li><a class="nav-link" href="#welcome-section">About</a></li>
-                <li><a class="nav-link" href="#projects">Projects</a></li>
-                <li><a class="nav-link" href="#contact">Contact</a></li>
+                <a class="nav-link" href="#welcome-section"><li>About</li></a>
+                <a class="nav-link" href="#projects"><li>Projects</li></a>
+                <a class="nav-link" href="#contact"><li>Contact</li></a>
             </ul>
         </nav>
 
@@ -34,17 +35,46 @@
 
             <div id="showroom">
 
-                <div class="project"><a class="link" href="https://codepen.io/dariuszkostrzewski/full/yLyEvWw" target="_blank"><img class="project-img" src="img/TributePage.png" alt="Dr. Norman Borlaug - Tribute Page"></a></div>
-                <div class="project"><a class="link" href="https://codepen.io/dariuszkostrzewski/full/MWYdwgX" target="_blank"><img class="project-img" src="img/SurveyForm.png" alt="Survey Page"></a></div>
-                <div class="project"><a class="link" href="https://codepen.io/dariuszkostrzewski/full/OJVXJEa" target="_blank"><img class="project-img" src="img/LandingPage.png" alt="Landing Page"></a></div>
-                <div class="project"><a class="link" href="https://codepen.io/dariuszkostrzewski/full/qBdXGga" target="_blank"><img class="project-img" src="img/TechDocPage.png" alt="Technical Documentation Page"></a></div>
-                <div class="project"><a class="link" href="#">This project is under construction</a></div>
-                <div class="project"><a class="link" href="#">This project is under construction</a></div>
+                <figure class="project">
+                    <a class="link" href="https://codepen.io/dariuszkostrzewski/full/yLyEvWw" target="_blank"><img class="project-img" src="img/TributePage.png" alt="Dr. Norman Borlaug - Tribute Page">
+                        <figcaption class="caption">Tribute Page</figcaption>
+                    </a>
+                </figure>
+
+                <figure class="project">
+                    <a class="link" href="https://codepen.io/dariuszkostrzewski/full/MWYdwgX" target="_blank"><img class="project-img" src="img/SurveyForm.png" alt="Survey Page">
+                        <figcaption class="caption">Survey Form</figcaption>
+                    </a>
+                </figure>
+
+                <figure class="project">
+                    <a class="link" href="https://codepen.io/dariuszkostrzewski/full/OJVXJEa" target="_blank"><img class="project-img" src="img/LandingPage.png" alt="Landing Page">
+                        <figcaption class="caption">Landing Page</figcaption>
+                    </a>
+                </figure>
+
+                <figure class="project">
+                    <a class="link" href="https://codepen.io/dariuszkostrzewski/full/qBdXGga" target="_blank"><img class="project-img" src="img/TechDocPage.png" alt="Technical Documentation Page">
+                        <figcaption class="caption">Technical Documentation</figcaption>
+                    </a>
+                </figure>
+
+                <figure class="project">
+                    <a class="link" href="#">This project is under construction
+                        <figcaption class="caption"></figcaption>
+                    </a>
+                </figure>
+
+                <figure class="project">
+                    <a class="link" href="#">This project is under construction
+                        <figcaption class="caption"></figcaption>
+                    </a>
+                </figure>
 
             </div>
             
-            <div id="click-more">
-
+            <div id="show-more">
+                <a id="btn" href="#">See more <i class="fa fa-angle-right"></i></a>
             </div>
 
         </section>
