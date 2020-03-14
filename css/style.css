@@ -126,7 +126,7 @@ hr {
 }
 
 .project-img {
-    height: 300px;
+    height: 299px;
     width: 100%;
 }
 
@@ -139,7 +139,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 49px;
     color: #007580;
     font-size: 1.2em;
     font-weight: 600;
@@ -147,12 +147,13 @@ hr {
 }
 
 .project .material-icons, span {
-    visibility: hidden;
+    color: #EFBB35;
+    opacity: 0;
+    transition: opacity .8s ease-in-out;
 }
 
 .project:hover .material-icons, .project:hover span {
-    visibility: visible;
-    color: #EFBB35;
+    opacity: 1;
 }
 
 .material-icons {
@@ -175,6 +176,7 @@ hr {
     padding: 8px;
     color: #007580;
     background-color: #211a12;
+    transition: .7s ease;
 }
 
 #btn:hover {

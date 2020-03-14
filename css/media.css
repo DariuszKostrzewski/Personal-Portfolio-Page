@@ -1,0 +1,15 @@
+@media only screen and (max-width: 900px) {
+    #showroom {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        grid-auto-rows: minmax(300px, auto);
+    }   
+    #contact {
+        display: grid;
+        grid-template-rows:  1fr 1fr 1fr  auto;
+        justify-content: center;
+    }
+    #contact-nav {
+        flex-wrap: wrap;
+    }
+}
