@@ -36,11 +36,12 @@ body {
     font-size: 1.3em;
     font-weight: 500;
     padding: 0 1em;
-    color: #80929B;
+    color: #79c9d2;
 }
 
 .nav-link:hover {
     background-color: #007580;
+    transition: background-color .8s ease-in-out;
 }
 
 #welcome-section {
