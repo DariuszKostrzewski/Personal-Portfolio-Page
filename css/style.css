@@ -82,7 +82,7 @@ body {
     height: 150px;
     width: 100%;
     margin: auto;
-    color: /*#0C2224*/#79c9d2;
+    color: #79c9d2;
 }
 
 #subtitle {
@@ -125,6 +125,10 @@ hr {
     background-color:#211a12;
 }
 
+p {
+    text-align: center;
+}
+
 .project-img {
     height: 299px;
     width: 100%;
@@ -144,6 +148,13 @@ hr {
     font-size: 1.2em;
     font-weight: 600;
     background-color:#211a12;
+}
+
+pre {
+    display: block;
+    white-space: pre-line;
+    color: #EFBB35;
+    margin-left: .8em;
 }
 
 .project .material-icons, span {
