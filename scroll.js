@@ -5,7 +5,7 @@ $('a[href^="#"]').on('click',function () {
     $section = $(section);
 
    $('html, body').stop().animate({
-     'scrollTop': $section.offset().top-80
+     'scrollTop': $section.offset().top-79
     }, 1000, 'swing', function () {
      window.location.hash = section;
     });
