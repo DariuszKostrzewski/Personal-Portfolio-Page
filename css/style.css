@@ -76,28 +76,28 @@ body {
 #title {
     order: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    min-height: 150px;
     width: 100%;
     margin: auto;
     color: #79c9d2;
 }
 
 #subtitle {
-    height: 35%;
+    height: auto;
+    width: auto;
+    max-width: 90%;
     font-size: 2.2em;
+    text-align: center;
+    padding: 0 .5em .3em .5em;
+    border-bottom: 3px solid;
 }
 
 #subtitle a {
     text-decoration: none;
     color: #79c9d2;
-}
-
-hr {
-    width: 45%;
-    border: 2px solid #79c9d2;
 }
 
 #showroom {
@@ -195,34 +195,41 @@ pre {
 }
 
 #contact {
+    width: 100%;
     display: grid;
-    grid-template-rows: 2fr 1fr 2fr 1fr;
-    justify-content: center;
-    height: calc(100vh - 80px);
+    grid-template-rows: 2fr 3fr 1fr;
+    min-height: calc(100vh - 80px);
+    max-height: 100vh;
     color: #007580;
     background-color: hsla(200, 26%, 11%, 1);
 }
 
-#contact h1 {
-    text-align: center;
-    font-size: 3.5em;
-    margin-top: auto;
+#contact-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
 
-#contact>p {
+#contact h1 {
+    font-size: 3.5em;
+}
+
+#contact p {
     padding-top: .5em;
-    text-align: center;
     font-size: 1.2em;
     font-style: italic;
 }
 
 #contact-nav {
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 900px;
-    margin: 1em auto auto;
+    margin: 2em auto auto;
     list-style: none;
     font-size: 2em;
 }
@@ -255,9 +262,10 @@ pre {
 #footer {
     display: grid;
     grid-template-columns: 70% 30%;
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 2fr 1fr;
     margin-bottom: 0;
     font-size: .9em;
+    width: 100%;
     border-top: 3px solid #EFBB35;
 }
 

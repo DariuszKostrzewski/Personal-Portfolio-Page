@@ -1,15 +1,71 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 992px) {
     #showroom {
         display: grid;
         grid-template-columns: repeat(2, 45%);
         grid-auto-rows: minmax(300px, auto);
     }   
     #contact {
+        max-width: 100%;
         display: grid;
-        grid-template-rows:  1fr 1fr 2fr  auto;
+        grid-template-rows:  2fr 3fr 1fr;
         justify-content: center;
     }
+    #contact h1, p{
+        margin: 0;
+    }
     #contact-nav {
-        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #footer {
+        display: grid;
+        grid-template-columns: 99%;
+        grid-template-rows: 62% 19% 19%;
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+        padding: 2px;
+    }
+    #disclaimer {
+        grid-area: 1;
+        text-align: justify;
+        height: auto;
+        margin: 0;
+        padding: 5px;
+    }
+    #copyright {
+        grid-area: 2;
+        text-align: right;
+        margin: 0;
+        padding: 5px;
+    }
+    #signature {
+        grid-area: 3;
+        text-align: right;
+        margin: 0;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    #intro {
+        text-align: center;
+    }
+    #p-intro {
+        padding: 0 5px 0;
+    }
+    #showroom {
+        display: grid;
+        grid-template-columns: 90%;
+        grid-auto-rows: minmax(300px, auto);
+    }
+    #contact-nav {
+        height: 100%;
+        margin: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #contact h1, p{
+        text-align: center;
+        padding: 0 5px 0;
     }
 }
