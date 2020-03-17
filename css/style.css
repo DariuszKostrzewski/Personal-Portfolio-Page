@@ -49,7 +49,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 80px);
+    height: 100vh;
     min-height: 150px;
     font-size: 3em;
     color: #007580;
@@ -114,7 +114,7 @@ hr {
     padding: 1em 0;
 }
 
-.project {
+.project-tile {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,19 +151,19 @@ p {
 }
 
 pre {
-    display: block;
+    display: flex;
     white-space: pre-line;
     color: #EFBB35;
     margin-left: .8em;
 }
 
-.project .material-icons, span {
+.project-tile .material-icons, span {
     color: #EFBB35;
     opacity: 0;
     transition: opacity .8s ease-in-out;
 }
 
-.project:hover .material-icons, .project:hover span {
+.project-tile:hover .material-icons, .project-tile:hover span {
     opacity: 1;
 }
 
@@ -294,6 +294,10 @@ pre {
 
 .fcc-link {
     transition: font-size .3s linear;
+}
+
+i.fab {
+    vertical-align: middle;
 }
 
 .fcc-link:hover {
