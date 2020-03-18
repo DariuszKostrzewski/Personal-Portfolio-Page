@@ -195,11 +195,9 @@ pre {
 }
 
 #contact {
-    width: 100%;
     display: grid;
     grid-template-rows: 2fr 3fr 1fr;
     min-height: calc(100vh - 80px);
-    max-height: 100vh;
     color: #007580;
     background-color: hsla(200, 26%, 11%, 1);
 }
